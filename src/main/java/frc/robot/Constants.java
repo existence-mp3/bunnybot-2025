@@ -19,8 +19,13 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
+
+  public static final double AXIS_THRESHOLD = 0.1;
+
   public static class DrivetrainConfig {
     public static final double MAX_DRIVE_SPEED = 10.0; // m/s
+    public static final double MAX_TURN_SPEED = 10.0; // rad/s
+    public static final double SLOWMODE_FACTOR = 0.2; 
   }
 
   public static void sendNumberToElastic(String name, double num, double places) {
